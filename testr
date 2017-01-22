@@ -1,0 +1,1 @@
+curl --data "auth_key=$(node -e "console.log(require('./key'));")&path=/home/vincent/.wallpapers/skyrim.jpg" localhost:2986/add
