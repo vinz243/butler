@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 const request = require('request');
 const fs = require('fs');
 
@@ -11,7 +12,7 @@ if (fs.existsSync(p)) {
     if (body.message) return console.log(body.message);
 
     let url = body;
-    console.log('Available on', url);
+    console.log('Returned', url);
   });
 } else {
   console.log('Path does not exists');
