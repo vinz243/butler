@@ -29,7 +29,15 @@ To add a file or a folder to serve:
 
 ```
 $ beetler-add /absolute/path/to/file/or/folder
-{id: "<object-id>", auth: "<auth-key>", url: "localhost:2986/<object-id>/<auth-key>"}
+Returned {id: "<object-id>", auth: "<auth-key>", url: "localhost:2986/<object-id>/<auth-key>"}
+```
+
+you can also:
+
+
+```
+$ beetler-add $(pwd)/relative/path/to/file/or/folder
+Returned {id: "<object-id>", auth: "<auth-key>", url: "localhost:2986/<object-id>/<auth-key>"}
 ```
 
 ### Feature ideas
